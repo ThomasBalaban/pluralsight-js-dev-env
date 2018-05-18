@@ -1,4 +1,4 @@
-enviroment:
+environment:
   matrix:
     # node.js
     - nodejs_version: "9"

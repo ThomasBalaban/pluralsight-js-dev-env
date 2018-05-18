@@ -1,3 +1,3 @@
 language: node_js
-nose_js:
-	- "6"
+node_js:
+  - "stable"

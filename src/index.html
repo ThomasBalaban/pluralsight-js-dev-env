@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<% if (htmlWebpackPlugin.options.trackJSToken) { %>
+    <!-- BEGIN TRACKJS -->
+    <script type="text/javascript">window._trackJs = { token: '<%=htmlWebpackPlugin.options.trackJSToken%>' };</script>
+    <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+    <!-- END TRACKJS -->
+    <% } %>
 	<meta charset="utf-8">
 	<title>eh</title>
 	<script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
@@ -19,6 +25,5 @@
 
 		</tbody>
 	</table>
-	<script src="bundle.js"></script>
 </body>
 </html>
